@@ -17,6 +17,9 @@ https://pixabay.com/api/docs/
 
 
 
+clone the project that have already all the server set up
+
+
 Start by duplicating your project 3 weather app. Once duplicated, change the new project’s name to make certain you're not overwriting your old project. We are going to build off this project as a foundation.
 Get webpack set up to work with this project. Use the skills you learned in project 4 to get your development environment going.
 Create your src folder first. The src folder should contain a client folder and a server folder.
