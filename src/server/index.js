@@ -40,7 +40,7 @@ app.post('/getAPI', async function(req, res) {
 
     const url = "https://api.meaningcloud.com/sentiment-2.1?key="+ process.env.API_KEY + "&of=json&txt=" + text + "&model=general&lang=en"
 
-    //console.log(`Your process.env.API_Key is ${ process.env.API_KEY}`);
+    //console.log(`Your process.env.API_Key is ${ process.env.API_KEY}`); test
     console.log(`This is the url: ${url}`);
 
     const data = await fetch(url);
