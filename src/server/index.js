@@ -5,18 +5,14 @@ const mockAPIResponse = require('./mockAPI.js')
 const dotenv = require('dotenv');
 dotenv.config();
 
-
-
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const fetch = require('node-fetch')
 
 const app = express()
 
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
 app.use(cors());
 app.use(express.static('dist'))
 
@@ -37,11 +33,12 @@ app.listen(8081, function () {
 // make API request
 app.post('/getAPI', async function(req, res) {
     const text = req.body.text;
-
-    const url = "https://api.meaningcloud.com/sentiment-2.1?key="+ process.env.API_KEY + "&of=json&txt=" + text + "&model=general&lang=en"
+    //http://api.geonames.org/searchJSON?q=london&maxRows=1&username=carloscastilloml
+    //const url = "https://api.meaningcloud.com/sentiment-2.1?key="+ process.env.API_KEY + "&of=json&txt=" + text + "&model=general&lang=en"
+    const url = "http://api.geonames.org/searchJSON?q=london&maxRows=1&username=carloscastilloml"
 
     //console.log(`Your process.env.API_Key is ${ process.env.API_KEY}`);
-    console.log(`This is the url: ${url}`);
+    console.log(`This is the city: ${url}`);
 
     const data = await fetch(url);
     try {
