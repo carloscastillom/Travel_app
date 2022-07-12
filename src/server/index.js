@@ -28,8 +28,8 @@ app.get('/', function (req, res) {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8081, function () {
-    console.log('Example app listening on port 8081!')
+app.listen(8082, function () {
+    console.log('Example app listening on port 8082!')
 })
 
 
@@ -38,7 +38,9 @@ app.listen(8081, function () {
 app.post('/getAPI', async function(req, res) {
     const text = req.body.text;
 
-    const url = "https://api.meaningcloud.com/sentiment-2.1?key="+ process.env.API_KEY + "&of=json&txt=" + text + "&model=general&lang=en"
+    //const url = "https://api.meaningcloud.com/sentiment-2.1?key="+ process.env.API_KEY + "&of=json&txt=" + text + "&model=general&lang=en"
+
+    const url = "http://api.geonames.org/searchJSON?q=london&maxRows=10&username=carloscastilloml"
 
     //console.log(`Your process.env.API_Key is ${ process.env.API_KEY}`); test
     console.log(`This is the url: ${url}`);
