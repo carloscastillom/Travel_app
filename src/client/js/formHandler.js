@@ -9,10 +9,14 @@ function handleSubmit(event) {
         console.log("::: Form Submitted :::")
         Client.postData('http://localhost:8081/getAPI', {text: formText})
         .then(function(data) {
-            document.getElementById('text').innerHTML = "City: " + formText
-            document.getElementById('countryName').innerHTML = "totalRes: " + data.totalResultsCount
-            document.getElementById('Latitud').innerHTML = "Latitud: " + data.lat
-            document.getElementById('Longitude').innerHTML = "Longitude: " + data.lng
+
+            console.log(data)
+
+
+            //document.getElementById('text').innerHTML = "City: " + formText
+            //document.getElementById('countryName').innerHTML = "totalRes: " 
+            //document.getElementById('Latitud').innerHTML = "Latitudsss: " + data.totalResultsCount
+            //document.getElementById('Longitude').innerHTML = "Longitude: " + data.lng
 
 
 
