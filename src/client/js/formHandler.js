@@ -9,8 +9,12 @@ function handleSubmit(event) {
     Client.postData('http://localhost:8082/getAPI', {text: formText})
     .then(function(data) {
         console.log(data.geonames[0])
-        console.log(data.geonames[0].countryId)
-        console.log("change3")
+        console.log(data.geonames[0].name)
+        console.log(data.geonames[0].countryName)
+        console.log(data.geonames[0].countryCode)
+        console.log(data.geonames[0].lat)
+        console.log(data.geonames[0].lng)
+        console.log("change5")
         /*
         document.getElementById('text').innerHTML = "Text: " + formText
         document.getElementById('results').innerHTML = "Subjectivity: " + data.subjectivity

@@ -53,3 +53,9 @@ app.post('/getAPI', async function(req, res) {
         console.log(`Error in server/index.js - API : ${error}`);
     }
 })
+
+
+// key api 4fbf33d8795c485aa7d4e0484f7e6102 https://www.weatherbit.io/account/dashboard
+// https://www.weatherbit.io/
+// Forecast https://api.weatherbit.io/v2.0/forecast/daily?city=Raleigh,NC&key=4fbf33d8795c485aa7d4e0484f7e6102
+// Historic https://api.weatherbit.io/v2.0/history/daily?postal_code=27601&country=US&start_date=2022-07-09&end_date=2022-07-10&key=4fbf33d8795c485aa7d4e0484f7e6102
