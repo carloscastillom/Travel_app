@@ -1,7 +1,4 @@
 
-  
-    
-
     function CountDownTimer(dt, id)
     {
         var end = new Date(dt);
@@ -24,7 +21,7 @@
             }
             var days = Math.floor(distance / _day);
 
-            document.getElementById(id).innerHTML = days + 'days ';
+            document.getElementById(id).innerHTML = days + ' days to your trip';
         }
 
         timer = setInterval(showRemaining, 1000);
