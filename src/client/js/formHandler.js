@@ -3,6 +3,8 @@ function handleSubmit(event) {
 
     // check what text was put into the form field
     let formText = document.getElementById('name').value
+    let lati = ""
+    let longi = ""
     Client.checkForName(formText)
 
     console.log("::: Form Submitted :::")
@@ -16,14 +18,18 @@ function handleSubmit(event) {
         console.log(data.geonames[0].countryCode)
         console.log(data.geonames[0].lat)
         console.log(data.geonames[0].lng)
-        console.log("change7")
+        console.log("change10")
 
-        formText = data.geonames[0].lat 
+        lati = data.geonames[0].lat 
+        longi = data.geonames[0].lng 
 
-        Client.postData('http://localhost:8082/getAPI2', {text: formText})
+        Client.postData('http://localhost:8082/getAPI2', {latitud: lati, longitud: longi})
         .then(function(data2) {
-            console.log(formText)
-            console.log(data2)
+            console.log("test")
+            console.log(lati)
+            console.log(longi)
+            //console.log(data2.latitud)
+            //console.log(data2.longitud)
         })
         /*
 
