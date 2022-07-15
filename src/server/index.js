@@ -71,3 +71,6 @@ app.post('/getAPI2', async function(req, res) {
 // https://www.weatherbit.io/
 // Forecast https://api.weatherbit.io/v2.0/forecast/daily?city=Raleigh,NC&key=4fbf33d8795c485aa7d4e0484f7e6102
 // Historic https://api.weatherbit.io/v2.0/history/daily?postal_code=27601&country=US&start_date=2022-07-09&end_date=2022-07-10&key=4fbf33d8795c485aa7d4e0484f7e6102
+
+
+// https://pixabay.com/api/?key=28629495-48d923be44e03bd5a1f0c6f36&q=london&image_type=photo&pretty=true
