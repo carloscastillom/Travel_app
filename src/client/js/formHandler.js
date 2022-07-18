@@ -1,13 +1,19 @@
+
+import { CountDownTimer } from './countdown'
+
+
 function handleSubmit(event) {
     event.preventDefault()
 
     // check what text was put into the form field
     let formText = document.getElementById('name').value
+    let startDate = document.getElementById('checkIn').value
+    let daysToTrip = CountDownTimer(startDate, 'countdown')
     let lati = ""
     let longi = ""
     Client.checkForName(formText)
 
-    document.getElementById("Results").innerHTML = "your trip to " + formText + "is in " + "----Number of days---" + ' days to your trip';
+    document.getElementById("nDays").innerHTML = "your trip to " + formText + "is in " + startDate + ' days to your trip';
 
 
     console.log("::: Form Submitted :::")

@@ -1,4 +1,3 @@
-
     function CountDownTimer(dt, id)
     {
         var end = new Date(dt);
@@ -15,11 +14,15 @@
             if (distance < 0) {
 
                 clearInterval(timer);
+                //return 0;
+                
                 document.getElementById(id).innerHTML = 'EXPIRED!';
 
                 return;
             }
             var days = Math.floor(distance / _day);
+
+            //return days; 
 
             document.getElementById(id).innerHTML = days + ' days to your trip';
         }
