@@ -17,9 +17,10 @@ Pixabay
 
 https://pixabay.com/api/docs/
 
+bring the actual picture? how to do it. make it cooler
 
 
-clone the project that have already all the server set up
+clone the project that have already all the server set up. 
 
 
 Start by duplicating your project 3 weather app. Once duplicated, change the new project’s name to make certain you're not overwriting your old project. We are going to build off this project as a foundation.
