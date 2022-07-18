@@ -7,6 +7,9 @@ function handleSubmit(event) {
     let longi = ""
     Client.checkForName(formText)
 
+    document.getElementById("Results").innerHTML = "your trip to " + formText + "is in " + "----Number of days---" + ' days to your trip';
+
+
     console.log("::: Form Submitted :::")
     Client.postData('http://localhost:8082/getAPI', {text: formText})
     .then(function(data) {

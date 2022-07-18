@@ -22,7 +22,12 @@ export {
 console.log(checkForName);
 
 
-CountDownTimer('07/19/2022 10:1 AM', 'countdown');
+
+CountDownTimer('07/22/2022 10:1 AM', 'countdown');
+
+
+
+
 
 alert("I EXIST")
 console.log("CHANGE!!");
