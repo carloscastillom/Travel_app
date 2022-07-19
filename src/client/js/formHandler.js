@@ -1,5 +1,5 @@
 
-import { CountDownTimer } from './countdown'
+import { daysDiff } from './daysDiff'
 
 
 function handleSubmit(event) {
@@ -8,13 +8,15 @@ function handleSubmit(event) {
     // check what text was put into the form field
     let formText = document.getElementById('name').value
     let startDate = document.getElementById('checkIn').value
-    let daysToTrip = CountDownTimer(startDate, 'countdown')
+    let daystoTrip = daysDiff(startDate)
     let lati = ""
     let longi = ""
     Client.checkForName(formText)
 
-    document.getElementById("nDays").innerHTML = "your trip to " + formText + "is in " + startDate + ' days to your trip';
+    document.getElementById("nDays").innerHTML = "your trip to " + formText + "is in " + daystoTrip + ' days to your trip';
 
+    //days to trip
+    console.log(daysDiff(startDate))
 
     console.log("::: Form Submitted :::")
     Client.postData('http://localhost:8082/getAPI', {text: formText})

@@ -1,7 +1,7 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
 import { postData } from './js/postData'
-import { CountDownTimer } from './js/countdown'
+import { daysDiff } from './js/daysDiff'
 
 
 import './styles/resets.scss'
@@ -15,7 +15,7 @@ export {
     checkForName,
     handleSubmit,
     postData,
-    CountDownTimer
+    daysDiff
    }
 
 
@@ -23,7 +23,7 @@ console.log(checkForName);
 
 
 
-CountDownTimer('07/22/2022 10:1 AM', 'countdown');
+//CountDownTimer('07/25/2022 10:1 AM', 'countdown');
 
 
 
