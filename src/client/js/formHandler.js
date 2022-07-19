@@ -8,22 +8,25 @@ function handleSubmit(event) {
     // check what text was put into the form field
     let formText = document.getElementById('name').value
     let startDate = document.getElementById('checkIn').value
+    let endDate = document.getElementById('checkOut').value
     let daystoTrip = daysDiff(startDate)
+    let lengthTrip = daysDiff(endDate)-daystoTrip
     let lati = ""
     let longi = ""
-    Client.checkForName(formText)
+   
+   
+   // Calculating trip lenghts and capturing information
+    document.getElementById("trip").innerHTML = formText ;
+    document.getElementById("nDays").innerHTML = "Days to Trip:" + daystoTrip  + "days";
+    document.getElementById("tLength").innerHTML = "Trip Length " + lengthTrip +   "days";
 
-    document.getElementById("nDays").innerHTML = "your trip to " + formText + "is in " + daystoTrip + ' days to your trip';
 
-    //days to trip
-    console.log(daysDiff(startDate))
 
     console.log("::: Form Submitted :::")
     Client.postData('http://localhost:8082/getAPI', {text: formText})
     .then(function(data) {
 
         console.log(formText)
-        console.log(data.geonames[0])
         console.log(data.geonames[0].name)
         console.log(data.geonames[0].countryName)
         console.log(data.geonames[0].countryCode)
@@ -39,15 +42,11 @@ function handleSubmit(event) {
             console.log("test")
             console.log(lati)
             console.log(longi)
-            //console.log(data2.latitud)
-            //console.log(data2.longitud)
-        })
-        /*
+   
 
-        document.getElementById('text').innerHTML = "Text: " + formText
-        document.getElementById('results').innerHTML = "Subjectivity: " + data.subjectivity
-        document.getElementById('polarity').innerHTML = "Polarity: " + data.score_tag
-        */
+
+        })
+
     })
 }
 
