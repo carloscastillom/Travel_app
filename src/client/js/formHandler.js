@@ -22,9 +22,10 @@ function handleSubmit(event) {
     document.getElementById("tLength").innerHTML = "Trip Length " + lengthTrip +   " days ";
 
 
-    lati= getcoordinates(formText)
+    lati = getcoordinates(formText)
 
     console.log(lati)
+    //console.log(lati.geonames[0].countryName)
     console.log("::: Form Submitted :::")
 
     

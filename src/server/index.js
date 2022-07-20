@@ -1,4 +1,10 @@
 
+// https://github.com/carloscastillom/Web-Development/blob/main/7.WeatherApp/website/app.js
+
+// https://github.com/carloscastillom/Web-Development/blob/main/7.WeatherApp/server.js
+
+
+
 /* Empty JS object to act as endpoint for all routes */
 projectData = {};
 
