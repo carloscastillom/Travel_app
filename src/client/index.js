@@ -1,7 +1,7 @@
-import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
 import { postData } from './js/postData'
 import { daysDiff } from './js/daysDiff'
+import { getcoordinates } from './js/geonamesapi'
 
 
 import './styles/resets.scss'
@@ -12,14 +12,14 @@ import './styles/header.scss'
 
 
 export {
-    checkForName,
+
     handleSubmit,
     postData,
-    daysDiff
+    daysDiff,
+    getcoordinates
    }
 
 
-console.log(checkForName);
 
 
 

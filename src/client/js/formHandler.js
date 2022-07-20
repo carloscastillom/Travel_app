@@ -1,5 +1,6 @@
 
 import { daysDiff } from './daysDiff'
+import { getcoordinates } from './geonamesapi'
 
 
 function handleSubmit(event) {
@@ -17,13 +18,21 @@ function handleSubmit(event) {
    
    // Calculating trip lenghts and capturing information
     document.getElementById("trip").innerHTML = formText ;
-    document.getElementById("nDays").innerHTML = "Days to Trip:" + daystoTrip  + "days";
-    document.getElementById("tLength").innerHTML = "Trip Length " + lengthTrip +   "days";
+    document.getElementById("nDays").innerHTML = "Days to Trip:" + daystoTrip  + " days";
+    document.getElementById("tLength").innerHTML = "Trip Length " + lengthTrip +   " days ";
 
 
+    lati= getcoordinates(formText)
 
+    console.log(lati)
     console.log("::: Form Submitted :::")
-    Client.postData('http://localhost:8082/getAPI', {text: formText})
+
+    
+
+
+    /*
+    
+    Client.postData('http://localhost:8080/getAPI', {text: formText})
     .then(function(data) {
 
         console.log(formText)
@@ -37,6 +46,8 @@ function handleSubmit(event) {
         lati = data.geonames[0].lat 
         longi = data.geonames[0].lng 
 
+
+        
         Client.postData('http://localhost:8082/getAPI2', {latitud: lati, longitud: longi})
         .then(function(data2) {
             console.log("test")
@@ -46,8 +57,9 @@ function handleSubmit(event) {
 
 
         })
-
+        
     })
+    */
 }
 
 export { handleSubmit }

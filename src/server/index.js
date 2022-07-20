@@ -1,3 +1,7 @@
+
+/* Empty JS object to act as endpoint for all routes */
+projectData = {};
+
 var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
@@ -28,12 +32,41 @@ app.get('/', function (req, res) {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8082, function () {
-    console.log('Example app listening on port 8082!')
+app.listen(8080, function () {
+    console.log('Example app listening on port 8080!')
 })
 
 
+app.get('/all', sendData);
 
+function sendData (req, res) {
+  res.send(projectData);
+};
+
+
+
+/*
+// make API request
+app.post('/getAPI', async function(req, res) {
+    const text = req.body.text;
+    //const url = "https://api.meaningcloud.com/sentiment-2.1?key="+ process.env.API_KEY + "&of=json&txt=" + text + "&model=general&lang=en"
+    const url = "http://api.geonames.org/searchJSON?q=london&maxRows=10&username=carloscastilloml"
+    //console.log(`Your process.env.API_Key is ${ process.env.API_KEY}`); test
+    console.log(`This is the url: ${url}`);
+    const data = await fetch(url);
+    try {
+        res.send(await data.json());
+    }
+    catch(error) {
+        console.log(`Error in server/index.js - API : ${error}`);
+    }
+
+})
+
+/*
+
+
+/*
 // make API request
 app.post('/getAPI', async function(req, res) {
     const text = req.body.text;
@@ -51,6 +84,8 @@ app.post('/getAPI', async function(req, res) {
 })
 
 
+
+
 app.post('/getAPI2', async function(req, res) {
     const text = req.body.text;
     //const url = "https://api.meaningcloud.com/sentiment-2.1?key="+ process.env.API_KEY + "&of=json&txt=" + text + "&model=general&lang=en"
@@ -65,6 +100,10 @@ app.post('/getAPI2', async function(req, res) {
         console.log(`Error in server/index.js - API : ${error}`);
     }
 })
+*/
+
+
+
 
 
 // key api 4fbf33d8795c485aa7d4e0484f7e6102 https://www.weatherbit.io/account/dashboard
