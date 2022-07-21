@@ -2,6 +2,7 @@ import { handleSubmit } from './js/formHandler'
 import { postData } from './js/postData'
 import { daysDiff } from './js/daysDiff'
 import { getcoordinates } from './js/geonamesapi'
+import { getweather } from './js/weatherapi'
 
 
 import './styles/resets.scss'
@@ -16,7 +17,8 @@ export {
     handleSubmit,
     postData,
     daysDiff,
-    getcoordinates
+    getcoordinates,
+    getweather
    }
 
 

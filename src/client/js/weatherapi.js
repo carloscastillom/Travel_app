@@ -1,8 +1,10 @@
 
+const getweather = async function(weatherData={}) {
 
-const getcoordinates = async function(txt='') {
+  console.log(weatherData.latitud)
+  console.log(weatherData.longitud)
 
-    const url = "http://api.geonames.org/searchJSON?q="+txt+"&maxRows=10&username=carloscastilloml"
+    const url = "https://api.weatherbit.io/v2.0/forecast/daily?lat=38.123&lon=-78.543&key=4fbf33d8795c485aa7d4e0484f7e6102"
     console.log(`This is the url: ${url}`);
     const res = await fetch(url);
     try {
@@ -23,4 +25,6 @@ const getcoordinates = async function(txt='') {
 
     }
 
-export { getcoordinates }
+export { getweather }
+
+
