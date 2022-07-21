@@ -4,7 +4,7 @@ const getweather = async function(weatherData={}) {
   console.log(weatherData.latitud)
   console.log(weatherData.longitud)
 
-    const url = "https://api.weatherbit.io/v2.0/forecast/daily?lat=38.123&lon=-78.543&key=4fbf33d8795c485aa7d4e0484f7e6102"
+    const url = "https://api.weatherbit.io/v2.0/forecast/daily?lat=" + weatherData.latitud +"3&lon="+ weatherData.longitud +"&key=4fbf33d8795c485aa7d4e0484f7e6102"
     console.log(`This is the url: ${url}`);
     const res = await fetch(url);
     try {

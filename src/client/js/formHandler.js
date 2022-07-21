@@ -33,6 +33,12 @@ function handleSubmit(event) {
 
         getweather({latitud: lati, longitud: longi})
 
+        .then(function(data){
+            console.log(data.data[daystoTrip].max_temp)
+            console.log(data.data[daystoTrip].min_temp)
+        })
+
+
         /*
         datanew={
           temperature: data.temperature, 
