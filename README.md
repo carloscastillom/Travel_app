@@ -19,7 +19,8 @@ Pixabay
 
 https://pixabay.com/api/docs/
 
-bring the actual picture? how to do it. make it cooler
+bring the actual picture? how to do it. make it cooler. try to do it fast
+
 
 
 clone the project that have already all the server set up. 
