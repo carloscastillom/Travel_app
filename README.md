@@ -19,7 +19,7 @@ Pixabay
 
 https://pixabay.com/api/docs/
 
-bring the actual picture? how to do it. make it cooler. try to do it fast
+bring the actual picture? how to do it. make it cooler. try to do it fast!!
 
 
 
