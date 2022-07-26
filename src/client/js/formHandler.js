@@ -2,6 +2,7 @@
 import { daysDiff } from './daysDiff'
 import { getcoordinates } from './geonamesapi'
 import { getweather } from './weatherapi'
+import { getimages } from './imageapi'
 
 
 function handleSubmit(event) {
@@ -37,11 +38,23 @@ function handleSubmit(event) {
             console.log(data.data[daystoTrip].max_temp)
             console.log(data.data[daystoTrip].min_temp)
 
-            document.getElementById("Temperature").innerHTML = "Temperature Between: " + data.data[daystoTrip].min_temp + " - "+ data.data[daystoTrip].max_temp + " °C";
+            document.getElementById("Temperature").innerHTML = "Temperature Between: " + data.data[daystoTrip].min_temp + " to "+ data.data[daystoTrip].max_temp + " °C";
 
+            getimages(formText)
+
+            .then(function(data){
+                console.log(data)
+            })
+
+            //.then(function(data){
+
+             //   console.log(data)
+              //  })
+
+                            
 
             // to update the link
-            document.getElementById("searchedImg").src="https://pixabay.com/get/g1371dfc17ca6cc295d51f1f07fe0dc4313c4236bf3d2b59da54fb7132f1252160c2ca5990869215ae7924ee12b1ebd941731c3c580023b64f7d8b7a21ea9e303_640.jpg";
+            document.getElementById("searchedImg").src="https://pixabay.com/get/g3a636c681ebbf960615688ad4bf3247b76da49a77355759cc6d68713e63b82ee2f8616d96446b6c7290372efda8a263ace9c9e4ad8176969bb1959da21d05b79_640.jpg";
             //img document.getElementById("searchedImg")
 
 

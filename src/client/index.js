@@ -3,6 +3,7 @@ import { postData } from './js/postData'
 import { daysDiff } from './js/daysDiff'
 import { getcoordinates } from './js/geonamesapi'
 import { getweather } from './js/weatherapi'
+import { getimages } from './js/imageapi'
 
 
 import './styles/resets.scss'
@@ -18,7 +19,8 @@ export {
     postData,
     daysDiff,
     getcoordinates,
-    getweather
+    getweather,
+    getimages
    }
 
 
