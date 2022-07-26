@@ -28,3 +28,6 @@ bring the actual picture? how to do it. make it cooler. try to do it fast!!
 Implement testing
 
 server.js file should be taken directly from passed project 3 with the addition of added member: value pairs and the required API keys.
+
+
+Styling is set up in a logical way. All interactive elements have hover states.
