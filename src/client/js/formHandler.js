@@ -14,37 +14,31 @@ function handleSubmit(event) {
     let endDate = document.getElementById('checkOut').value
     let daystoTrip = daysDiff(startDate)
     let lengthTrip = daysDiff(endDate)-daystoTrip
-    let lati = ""
-    let longi = ""
     let result = ""
    
    // Calculating trip lenghts and capturing information
-    document.getElementById("trip").innerHTML = formText ;
-    document.getElementById("nDays").innerHTML = "Days to Trip:" + daystoTrip  + " days";
-    document.getElementById("tLength").innerHTML = "Trip Length " + lengthTrip +   " days ";
+
 
     getcoordinates(formText)
 
     .then(function(data){
 
-        console.log(data.geonames[0].lat)
-
-        lati = data.geonames[0].lat
-        longi = data.geonames[0].lng
-
-        getweather({latitud: lati, longitud: longi})
+        getweather({latitud: data.geonames[0].lat, longitud: data.geonames[0].lng})
 
         .then(function(data){
-            console.log(data.data[daystoTrip].max_temp)
-            console.log(data.data[daystoTrip].min_temp)
 
-            document.getElementById("Temperature").innerHTML = "Temperature Between: " + data.data[daystoTrip].min_temp + " to "+ data.data[daystoTrip].max_temp + " °C";
+            result = "Temperature Between: " + data.data[daystoTrip].min_temp + " to "+ data.data[daystoTrip].max_temp + " °C";
+            
 
             getimages(formText)
 
             .then(function(data){
-                console.log(data.hits[0].webformatURL)
+
+                document.getElementById("trip").innerHTML = formText ;
+                document.getElementById("nDays").innerHTML = "Days to Trip:" + daystoTrip  + " days";
+                document.getElementById("tLength").innerHTML = "Trip Length " + lengthTrip +   " days ";
                 document.getElementById("searchedImg").src=data.hits[0].webformatURL;
+                document.getElementById("Temperature").innerHTML = result
 
             })
 
