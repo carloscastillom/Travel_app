@@ -18,7 +18,6 @@ function handleSubmit(event) {
    
    // Calculating trip lenghts and capturing information
 
-
     getcoordinates(formText)
 
     .then(function(data){
@@ -33,6 +32,10 @@ function handleSubmit(event) {
             getimages(formText)
 
             .then(function(data){
+
+                //createTrip(tripInfo)
+                //class formtext
+                //Do a new JS script that adds the css
 
                 document.getElementById("trip").innerHTML = formText ;
                 document.getElementById("nDays").innerHTML = "Days to Trip:" + daystoTrip  + " days";

@@ -27,7 +27,7 @@ export {
 
 
 
-//CountDownTimer('07/25/2022 10:1 AM', 'countdown');
+//add a remove trip script; find the trip, remove all items
 
 
 
