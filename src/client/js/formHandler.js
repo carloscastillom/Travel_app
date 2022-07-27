@@ -43,7 +43,9 @@ function handleSubmit(event) {
             getimages(formText)
 
             .then(function(data){
-                console.log(data)
+                console.log(data.hits[0].webformatURL)
+                document.getElementById("searchedImg").src=data.hits[0].webformatURL;
+
             })
 
             //.then(function(data){
@@ -54,7 +56,7 @@ function handleSubmit(event) {
                             
 
             // to update the link
-            document.getElementById("searchedImg").src="https://pixabay.com/get/g3a636c681ebbf960615688ad4bf3247b76da49a77355759cc6d68713e63b82ee2f8616d96446b6c7290372efda8a263ace9c9e4ad8176969bb1959da21d05b79_640.jpg";
+            
             //img document.getElementById("searchedImg")
 
 
