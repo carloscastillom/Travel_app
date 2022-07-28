@@ -26,10 +26,11 @@ ToDo===
 
 ![image](https://user-images.githubusercontent.com/65776444/180981583-40cf0a5a-8905-447e-b966-1232c725f7d4.png)
 
-
+Remove an add with the button 
 Implement testing
 
 server.js file should be taken directly from passed project 3 with the addition of added member: value pairs and the required API keys.
-
+OK
 
 Styling is set up in a logical way. All interactive elements have hover states.
+OK
