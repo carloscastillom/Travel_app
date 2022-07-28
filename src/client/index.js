@@ -4,6 +4,7 @@ import { daysDiff } from './js/daysDiff'
 import { getcoordinates } from './js/geonamesapi'
 import { getweather } from './js/weatherapi'
 import { getimages } from './js/imageapi'
+import { createTripElem } from './js/createTripElements.js'
 
 
 import './styles/resets.scss'
@@ -11,6 +12,7 @@ import './styles/base.scss'
 import './styles/footer.scss'
 import './styles/form.scss'
 import './styles/header.scss'
+import './styles/tripCard.scss'
 
 
 export {
@@ -20,7 +22,8 @@ export {
     daysDiff,
     getcoordinates,
     getweather,
-    getimages
+    getimages,
+    createTripElem
    }
 
 

@@ -17,7 +17,7 @@
                     Travel App TEST
             </section>
         </header>
-
+        <div id="Testing">tes</div>
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
@@ -27,17 +27,23 @@
                     <input id="checkIn" type="date" name="input" value=""  placeholder="Check In">
                     <label for="checkOut">End date:</label>
                     <input id="checkOut" type="date" name="input" value=""  placeholder="Check Out">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    <input type="submit" name="" value="Add Trip" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
                 </form>
-            <section>
+            </section>
 
             <section>
-                <strong>Form Results:</strong>
-                <div id="trip"></div>
-                <div id="nDays"></div>
-                <div id="tLength"></div>
-                <div id="Temperature"></div>
-                <img id="searchedImg">
+                <div class="tripCard">
+                    <div class="blogPostHeaderB1">
+                          <img id="searchedImg" class="card__image"> <img >
+                          <div class="blog__body" id="results">
+                            <div id="trip" class="thick"></div>
+                            <div id="nDays"></div>
+                            <div id="tLength"></div>
+                            <div id="Temperature"></div>
+                            <input type="submit" name="" value="Remove Trip" >
+                          </div>
+                      </div>
+                </div>
             </section>
         </main>
 

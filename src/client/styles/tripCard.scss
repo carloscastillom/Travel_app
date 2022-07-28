@@ -1,0 +1,38 @@
+    .tripCard {
+        display: flex;
+        flex-direction: column; 
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+        background: linear-gradient(to right, #eeeef3, #ECE9E6);
+        border: 2px solid green;
+    }
+
+    .card__image{
+        width: 600px;
+        height: 500px;
+    }
+
+    .blogPostHeaderB1 {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid red;
+      }
+
+
+    .blog__body {
+        padding: 1rem;
+        margin: 10px ;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+    }
+
+
+    .thick {
+        font-weight: bold;
+        font-size:larger;
+      }
+      
+
+
+
