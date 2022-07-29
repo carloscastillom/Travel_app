@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel App</title>
+        <link rel="stylesheet" href="/styles/resets.css">
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/form.css">
+        <link rel="stylesheet" href="/styles/footer.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <section>
+                    Travel App TEST
+            </section>
+        </header>
+        <div id="Testing">tes</div>
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <label for="name">Destination:</label>
+                    <input id="name" type="text" name="input" value=""  placeholder="Enter your destination">
+                    <label for="checkIn">Start date:</label>
+                    <input id="checkIn" type="date" name="input" value=""  placeholder="Check In">
+                    <label for="checkOut">End date:</label>
+                    <input id="checkOut" type="date" name="input" value=""  placeholder="Check Out">
+                    <input type="submit" name="" value="Add Trip" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            </section>
+
+            <section>
+                <div class="tripCard">
+                    <div class="blogPostHeaderB1">
+                          <img id="searchedImg" class="card__image"> <img >
+                          <div class="blog__body" id="results">
+                            <div id="trip" class="thick"></div>
+                            <div id="nDays"></div>
+                            <div id="tLength"></div>
+                            <div id="Temperature"></div>
+                            <input type="submit" name="" value="Remove Trip" onclick="return Client.removeTrip(event)" >
+                          </div>
+                      </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+
+    </body>
+</html>
