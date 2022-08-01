@@ -1,7 +1,21 @@
 
-## Travel App.
+# Travel App.
 
+## Getting started
 
+Make sure you have  git and nodeJS intalled in you computer. 
+
+if not, please donwload them:
+- Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- NodeJS: https://nodejs.org/en/download/
+
+to clone this repository please in insert this into the command line
+`git clone https://github.com/carloscastillom/evaluate-news-nlp.git`
+
+Remember that once you clone, you will still need to install everything:
+
+`cd` into your new folder and run:
+- `npm install`
 
 
 
