@@ -3,7 +3,7 @@
 
 
 
-the app uses threr different api to obtain information for you. wou only need to set your destination and the dates your traveling.
+The app uses threr different api to obtain information for you. wou only need to set your destination and the dates your traveling.
 
 
 Remember that once you clone, you will still need to install everything:
