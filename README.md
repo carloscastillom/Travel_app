@@ -15,7 +15,7 @@ if not, please donwload them:
 - NodeJS: https://nodejs.org/en/download/
 
 to clone this repository please in insert this into the command line
-`https://github.com/carloscastillom/evaluate-news-nlp.git`
+`https://github.com/carloscastillom/Travel_app.git`
 
 Remember that once you clone, you will still need to install everything:
 
