@@ -6,7 +6,7 @@
 
 
 /* Empty JS object to act as endpoint for all routes */
-projectData = {};
+//projectData = {};
 
 var path = require('path')
 const express = require('express')
@@ -38,9 +38,13 @@ app.get('/', function (req, res) {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8080, function () {
-    console.log('Example app listening on port 8080!')
-})
+const PORT = 8080;
+const serverport = app.listen(PORT, () => {
+    console.log(`Server started on port: ${PORT}`);
+  });
+
+
+
 
 
 app.get('/all', sendData);
