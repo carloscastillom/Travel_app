@@ -43,10 +43,14 @@ to run the project in Production you must
 
 
 Example desktop view London
+
+
 ![image](https://user-images.githubusercontent.com/65776444/182338393-e0328d8e-ce68-435a-9643-1ff6b4dc19e8.png)
 
 
 Example mobile view London
+
+
 ![image](https://user-images.githubusercontent.com/65776444/182338552-7e1703bf-993f-4726-bfe0-795b7238899c.png)
 
 
