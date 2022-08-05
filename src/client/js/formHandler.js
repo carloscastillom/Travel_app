@@ -21,7 +21,6 @@ function handleSubmit(event) {
    // Calculating trip lenghts and capturing information
 
     getcoordinates(formText)
-
     //createTripElem()
 
     .then(function(data){
@@ -49,6 +48,8 @@ function handleSubmit(event) {
                 document.getElementById("searchedImg").src=data.hits[0].webformatURL;
                 document.getElementById("Temperature").innerHTML = result
 
+                
+
             })
 
 
@@ -56,7 +57,7 @@ function handleSubmit(event) {
 
         })
 
-    createTripElem() 
+    
     console.log("::: Form Submitted :::")
 
     

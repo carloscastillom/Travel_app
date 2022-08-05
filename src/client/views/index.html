@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
         <title>Travel App</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
     </head>
 
     <body>
         
         <header>
             <section>
-                    Travel App TEST
+                    Travel App
             </section>
         </header>
-        <div id="Testing">tes</div>
+
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
@@ -40,7 +35,7 @@
                             <div id="nDays"></div>
                             <div id="tLength"></div>
                             <div id="Temperature"></div>
-                            <input type="submit" name="" value="Remove Trip" >
+                            <input type="submit" name="" value="Remove Trip" onclick="return Client.removeTrip(event)" >
                           </div>
                       </div>
                 </div>
