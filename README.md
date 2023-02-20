@@ -3,7 +3,7 @@
 
 
 
-The app uses three different api to obtain information for you. wou only need to set your destination and the dates you are traveling.
+The app uses three different api to obtain information for you. you only need to set your destination and the dates you are traveling. There is opportunity to Imporve the fron-end
 
 
 ## Getting started
